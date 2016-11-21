@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <!-- 线性布局，提供了权重的概念:
+    	表示:在线性里面，所占的空间大小是多少。(具体到比例)
+    	表示:在线性布局里面，所占剩余空间的大小（按照比例） +  自身的大小
+    	
+    	
+    	layout_weight: 需要一个int数字
+     -->
+     
+     <Button 
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:text="按钮1"/>
+     
+    <Button 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="按钮2"/> 
+     
+    <Button 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="按钮3"/>
+    
+    
+    <!-- 
+    	有权重：如何计算最后空间所占的大小。这里是宽。
+    	最后所占的大小= 分配的剩余空间的大小 + 自身的大小
+    	
+    	b0 width = 0
+    	b1 width = 0 
+    	b2 width = 0
+    	
+    	设：屏幕大小为x.
+    	剩余大小:
+        x = x - 0 - 0 - 0
+        
+        b0 权重 1  总权重是6
+        b0最后的宽: x* 1/6 +0 = 屏幕的1/6
+        
+        b1 权重 2
+        b1最后的宽: x* 2/6 +0 = 屏幕的1/3
+        
+        b2 权重 3
+        b2最后的宽: x* 3/6 +0 = 屏幕的1/2
+    	
+    	所以，为了书写简单，减少计算和出错，
+    	如果是垂直的，所有使用权重的高，0dp
+    	如果是水平的，所有使用权重的宽，0dp
+    
+     -->
+    
+    
+    
+    
+    
+</LinearLayout>

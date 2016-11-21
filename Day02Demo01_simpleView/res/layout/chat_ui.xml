@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 如何保持底部占有的空间固定 -->
+    <TextView 
+        android:background="#F00"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <TextView 
+        android:background="#0FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是输入框"/>
+    
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 垂直摆放的  -->
+    <!-- 文字大小，使用sp作为单位 
+    	gravity 
+    	layout_gravity 的区别
+    -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:text="凤舞九天管理系统"
+        />
+
+    <!-- hint 表示输入框输入之前的那个提示 -->
+	<EditText 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="请输入用户名"
+	    />
+	
+	<EditText 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="请输入密码"/>
+    
+	<Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="登陆"/>
+	
+	<Button android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="注册"/>
+	
+	
+    
+    
+</LinearLayout>

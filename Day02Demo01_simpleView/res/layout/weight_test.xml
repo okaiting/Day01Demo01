@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="按钮1"
+        android:layout_weight="1"/>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="按钮2"
+        android:layout_weight="2"/>
+    <!-- 
+    	使用权重，最终高的计算。
+    	
+    	最终的高= 所占屏幕的剩余大小(平分后) + 自身的高
+    	设： 屏幕的高 x.
+    	
+    	剩余的屏幕大小:
+    	-x = x - x - x  屏幕大小就去两个match_parent的按钮的大小,就是-的。
+    	
+    	最终：
+    	b0:
+    	-x * 1/2 + x = 1/2 x
+    	
+    	b1:
+    	-x*1/2 + ｘ　＝　1／２ｘ
+    	
+     -->
+    
+</LinearLayout>

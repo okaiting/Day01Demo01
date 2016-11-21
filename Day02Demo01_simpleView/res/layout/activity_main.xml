@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qfeng.day02demo01.MainActivity" >
+
+    <!-- 
+    	android:layout_width 表示当前TextView的宽
+    	android:layout_height 表示当前TextView的高
+    	
+    	可以传的值:
+    		fill_parent : 已经过时了，表示填充父容器。
+    		match_parent: fill_parent的替代，表示填充父容器。
+    		wrap_content: 包裹内容。内容有多少，它就有多大。
+   		android:padding: 内边距。表示里面的内容和边的距离。 
+   		android:margin[top/left/right/bottom]:外边距。表示自己本身，和外面那个边的距离。
+    	android:text ：TextView显示的内容
+    	
+    	android : 命名空间
+    	
+    	px 像素单位
+    	dp 像素单位。 这个像素单位，只是Android用的。
+    		设备独立像素。
+    		原因：Android设备，非常多，所以，为了让不同的屏幕上面展示的效果一样，使用dp作为单位。
+    	
+    	换算公式 :
+    	px = dp * (dpi/160);	
+    	dpi: dot per inch . 每一英寸所占的像素点的多少。 分辨率。
+    	
+    	同样的dp，在分辨率高的屏幕上，显示的像素点多。
+     -->
+    <TextView
+        android:background="#F00"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="测试内边距和外边距" />
+    <!--  @string/hello_world -->
+
+</RelativeLayout>

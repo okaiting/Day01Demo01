@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 线性布局的嵌套： ViewGroup -> ViewGroup -->
+    <!-- 使用layout_weight  layout_gravity   -->
+    
+    <!-- android:layout_gravity="center_horizontal"
+    		水平居中 -->
+    <TextView
+        android:background="#F00"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="第一个子控件"/>
+    
+    <!--  android:gravity="center" 让内容居中，注意
+    和 layout_gravity的区别  -->
+    <TextView 
+        android:background="#0F0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="第二个子控件"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#0FF"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <!-- 布局里面，可以继续添加内容 -->
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+         	android:layout_weight="2"
+         	android:gravity="center"
+            android:text="子控件的子控件01"/>
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+          	android:layout_weight="2"
+          	android:gravity="center"
+            android:text="子控件的子控件02"/>
+        
+    </LinearLayout>
+    
+    
+    
+    
+    
+</LinearLayout>

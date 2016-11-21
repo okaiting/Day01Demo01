@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 一般而言，最外面的布局的宽高、都是设置为match_parent ,表示填充父容器 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <!--
+    	LinearLayout ：线性布局
+    	什么是线性？ 
+    		一条线。
+    		k固定。
+    		
+    	在Android里面，线性有两种形式存在:
+    		水平、垂直。
+    		
+    	在LinearLayout 里面使用属性:
+    	android:orientation="vertical"
+    						
+    	表示垂直摆放，依次 从上 往 下 。
+    						 horizontal
+    	表示水平摆放，依次 从左 到 右 。
+    	
+    	起点都为左上角。因为屏幕的坐标原点是从左上角开始的。
+    	
+    -->
+    <!-- 使用两个TextView，查看他们的位置关系 -->
+    <!-- wi  he  text  ma -->
+
+    <TextView
+        android:background="#F00"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:text="第一个" />
+
+    <TextView
+        android:background="#0F0"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:text="第二个" />
+
+</LinearLayout>

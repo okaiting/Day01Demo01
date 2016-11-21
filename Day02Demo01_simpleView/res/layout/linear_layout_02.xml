@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <!-- 在TextView 里面，将文字，放在TextView的中间
+    	 使用android:gravity 属性 top bottom  right center...
+    	 
+    	 如果，TextView的大小是内容包裹，wrap_content，那么gravity属性，将失效。
+    	 
+    	 layout_gravity:
+    	 	线性布局提供的一个属性，
+    	 		用在线性布局的孩子里面，表示这个孩子，应该怎么摆放。
+    	 		注意：如果线性布局是垂直的，只能水平居中。
+    	 			 如果线性布局是水平的，只能垂直居中。
+    	 -->
+    <TextView 
+        android:background="#F00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呵呵哒"
+        android:gravity="center|right"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>
